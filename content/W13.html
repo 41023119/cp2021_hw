@@ -128,7 +128,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li class='has-children'><a href='w10.html'>w10</a><ul class='dropdown'><li><a href='Paradigm.html'>Paradigm</a></li></ul><li class='has-children'><a href='exam.html'>exam</a><ul class='dropdown'><li><a href='W13.html'>W13</a></li></ul><li><a href='HW1.html'>HW1</a><li class='has-children'><a href='HW2.html'>HW2</a><ul class='dropdown'><li><a href='GitExtensions.html'>GitExtensions</a><li><a href='run.html'>run</a></li></ul><li class='has-children'><a href='HW3.html'>HW3</a><ul class='dropdown'><li><a href='Snake.html'>Snake</a></li></ul><li class='has-children'><a href='Final Project.html'>Final Project</a><ul class='dropdown'><li><a href='41023119.html'>41023119</a></li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='w10.html'>w10</a><ul class='dropdown'><li><a href='Paradigm.html'>Paradigm</a></li></ul><li class='has-children'><a href='exam.html'>exam</a><ul class='dropdown'><li><a href='W13.html'>W13</a></li></ul><li><a href='HW1.html'>HW1</a><li class='has-children'><a href='HW2.html'>HW2</a><ul class='dropdown'><li><a href='GitExtensions.html'>GitExtensions</a><li><a href='run.html'>run</a></li></ul><li class='has-children'><a href='HW3.html'>HW3</a><ul class='dropdown'><li><a href='Bsnake.html'>Bsnake</a><li><a href='Snake.html'>Snake</a></li></ul><li class='has-children'><a href='Final Project.html'>Final Project</a><ul class='dropdown'><li><a href='41023119.html'>41023119</a></li>
                       </ul>
                 </nav>
               </div>
@@ -140,7 +140,7 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">exam << <a href='exam.html'>Previous</a> <a href='HW1.html'>Next</a> >> HW1<br /><h1>W13</h1>
-<p><button id="w13">列出 10 個座標</button><button id="asd">方格中列出 10 個座標</button></p>
+<p><button id="w13">列出 10 個座標</button><button id="asd">方格中列出 10 個座標</button><button id="qwe">隨機方格</button><button id="zxc">真隨機方格</button></p>
 <script src="./../cmsimde/static/brython.js"></script>
 <script src="./../cmsimde/static/brython_stdlib.js"></script>
 <!-- for ggame -->
@@ -264,10 +264,30 @@ document["w13"].bind("click", w13.prog)
 <script type="text/python3">
 import beditor
 from browser import document
-url = "https://gist.githubusercontent.com/Lujay030/3aa43293d6d23ecbb75590d0eedcc931/raw/652b600a4532fa420468f9ad23c9dacf7408afe0/%25E7%2595%25AB%25E6%25A0%25BC%25E5%25AD%2590"
+url = "https://gist.githubusercontent.com/Lujay030/3aa43293d6d23ecbb75590d0eedcc931/raw/1a350cab1329099f38e02da4dbdabf76f6b7b8f0/%25E7%2595%25AB%25E6%25A0%25BC%25E5%25AD%2590"
 src = open(url).read()
 asd = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
 document["asd"].bind("click", asd.prog)
+</script>
+</p>
+<p>
+<script type="text/python3">
+import beditor
+from browser import document
+url = "https://gist.githubusercontent.com/Lujay030/6051e93ae902f1bcb263710bf4d3aa09/raw/e738844c9b3c7a8bc8244da2043944b6aa509311/w13%2520%25E5%25BB%25B6%25E4%25BC%25B8"
+src = open(url).read()
+qwe= beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["qwe"].bind("click", qwe.prog)
+</script>
+</p>
+<p>
+<script type="text/python3">
+import beditor
+from browser import document
+url = "https://gist.githubusercontent.com/Lujay030/8049df72e24ee68e8f3090660eca18f8/raw/f5f1772d2282eeb61e6b19670cf95135061d234a/w13%2520plas"
+src = open(url).read()
+zxc = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["zxc"].bind("click", zxc.prog)
 </script>
 </p><br />exam << <a href='exam.html'>Previous</a> <a href='HW1.html'>Next</a> >> HW1</div>
         
