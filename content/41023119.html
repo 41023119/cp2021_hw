@@ -140,7 +140,7 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">Final Project << <a href='Final Project.html'>Previous</a> <br /><h1>41023119</h1>
-<p><button id="w13">列出 10 個座標</button><button id="asd">方格中列出 10 個座標</button><button id="final">final 1</button><button id="final2">final2</button></p>
+<p><button id="w13">列出 10 個座標</button><button id="asd">方格中列出 10 個座標</button><button id="final">final 1</button><button id="final2">final2</button><button id="snake">snake</button></p>
 <script src="./../cmsimde/static/brython.js"></script>
 <script src="./../cmsimde/static/brython_stdlib.js"></script>
 <!-- for ggame -->
@@ -288,6 +288,16 @@ url = "https://gist.githubusercontent.com/Lujay030/da77abb1c172fce177ad5d3d06834
 src = open(url).read()
 final2 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
 document["final2"].bind("click", final2.prog)
+</script>
+</p>
+<p>
+<script type="text/python3">
+import beditor
+from browser import document
+url = "https://gist.githubusercontent.com/Lujay030/8ed01b36baca529bcfec5cf1b25cdf48/raw/056b6a2ad9bbd09fa677bf2c434110a78d60d862/snake%2520part2"
+src = open(url).read()
+snake = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["snake"].bind("click", snake.prog)
 </script>
 </p><br />Final Project << <a href='Final Project.html'>Previous</a> </div>
         
