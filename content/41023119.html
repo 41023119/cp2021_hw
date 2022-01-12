@@ -128,7 +128,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li class='has-children'><a href='w10.html'>w10</a><ul class='dropdown'><li><a href='Paradigm.html'>Paradigm</a></li></ul><li class='has-children'><a href='exam.html'>exam</a><ul class='dropdown'><li><a href='W13.html'>W13</a></li></ul><li><a href='HW1.html'>HW1</a><li class='has-children'><a href='HW2.html'>HW2</a><ul class='dropdown'><li><a href='GitExtensions.html'>GitExtensions</a><li><a href='run.html'>run</a></li></ul><li class='has-children'><a href='HW3.html'>HW3</a><ul class='dropdown'><li><a href='Bsnake.html'>Bsnake</a><li><a href='Snake.html'>Snake</a></li></ul><li class='has-children'><a href='Final Project.html'>Final Project</a><ul class='dropdown'><li><a href='41023119.html'>41023119</a></li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='w10.html'>w10</a><ul class='dropdown'><li><a href='Paradigm.html'>Paradigm</a></li></ul><li class='has-children'><a href='exam.html'>exam</a><ul class='dropdown'><li><a href='W13.html'>W13</a></li></ul><li><a href='HW1.html'>HW1</a><li class='has-children'><a href='HW2.html'>HW2</a><ul class='dropdown'><li><a href='GitExtensions.html'>GitExtensions</a><li><a href='run.html'>run</a></li></ul><li class='has-children'><a href='HW3.html'>HW3</a><ul class='dropdown'><li class='has-children'><a href='Game.html'>Game</a><ul class='dropdown'><li><a href='Bsnake.html'>Bsnake</a></li></ul><li><a href='Snake.html'>Snake</a></li></ul><li class='has-children'><a href='Final Project.html'>Final Project</a><ul class='dropdown'><li><a href='41023119.html'>41023119</a></li>
                       </ul>
                 </nav>
               </div>
@@ -140,7 +140,7 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">Final Project << <a href='Final Project.html'>Previous</a> <br /><h1>41023119</h1>
-<p><button id="w13">列出 10 個座標</button><button id="asd">方格中列出 10 個座標</button><button id="qwe">隨機方格</button><button id="zxc">真隨機方格</button><button id="final">final 1</button><button id="final2">final2</button><button id="snake">snake</button><button id="bsnake">bsnake</button><button id="hw1_1">hw1-1</button><button id="hw1_2">hw1-2</button></p>
+<p><button id="w13">列出 10 個座標</button><button id="asd">方格中列出 10 個座標</button><button id="qwe">隨機方格</button><button id="zxc">真隨機方格</button><button id="final">final 1</button><button id="final2">final2</button><button id="snake">snake</button><button id="bsnake">bsnake</button><button id="hw1_1">hw1-1</button><button id="hw1_2">hw1-2</button><button id="mora">猜拳</button></p>
 <script src="./../cmsimde/static/brython.js"></script>
 <script src="./../cmsimde/static/brython_stdlib.js"></script>
 <!-- for ggame -->
@@ -291,7 +291,7 @@ document["final"].bind("click", final.prog)
 <script type="text/python3">
 import beditor
 from browser import document
-url = "https://gist.githubusercontent.com/Lujay030/da77abb1c172fce177ad5d3d068345bc/raw/72aa06f9e615476a209b4b410d627bd2f9bcd60b/final%25202"
+url = "https://gist.githubusercontent.com/Lujay030/da77abb1c172fce177ad5d3d068345bc/raw/befd0381f8c46690d23198d9e57090b2f1cbb5de/final%25202"
 src = open(url).read()
 final2 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
 document["final2"].bind("click", final2.prog)
@@ -355,6 +355,16 @@ url = "https://gist.githubusercontent.com/Lujay030/8049df72e24ee68e8f3090660eca1
 src = open(url).read()
 zxc = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
 document["zxc"].bind("click", zxc.prog)
+</script>
+</p>
+<p>
+<script type="text/python3">
+import beditor
+from browser import document
+url = "https://gist.githubusercontent.com/Lujay030/d9f8414fa01d3497278044efb5c8becb/raw/fe2debb4aad912b0c9c052aa1f5370e23741fb86/game"
+src = open(url).read()
+mora = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["mora"].bind("click", mora.prog)
 </script>
 </p><br />Final Project << <a href='Final Project.html'>Previous</a> </div>
         
